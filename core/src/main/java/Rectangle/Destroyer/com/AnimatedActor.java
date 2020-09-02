@@ -12,7 +12,7 @@ public class AnimatedActor extends BaseActor
     private float elapsedTime;
     private Animation activeAnim;
     private String activeName;
-    private HashMap<String,Animation> animationStorage;
+    protected HashMap<String,Animation> animationStorage;
     
     public AnimatedActor()
     {
@@ -30,12 +30,12 @@ public class AnimatedActor extends BaseActor
             setActiveAnimation(name);
     }
     
-    public void storeAnimation(String name, Texture tex)
+    public void storeAnimation(String name, Texture texture)
     {
-        TextureRegion reg = new TextureRegion(tex);
+        TextureRegion reg = new TextureRegion(texture);
         TextureRegion[] frames = { reg };
-        Animation anim = new Animation(1.0f, frames);
-        storeAnimation(name, anim);
+        Animation animation = new Animation(1.0f, frames);
+        storeAnimation(name, animation);
     }
     
     public void setActiveAnimation(String name)

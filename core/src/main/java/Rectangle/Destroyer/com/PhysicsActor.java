@@ -5,7 +5,7 @@ import com.badlogic.gdx.math.Vector2;
 
 public class PhysicsActor extends AnimatedActor
 {
-    private Vector2 velocity;
+    protected Vector2 velocity;
     private Vector2 acceleration;
 
     // maximum speed

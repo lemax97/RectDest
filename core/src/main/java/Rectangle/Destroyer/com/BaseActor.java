@@ -18,7 +18,7 @@ public class BaseActor extends Group
     public TextureRegion region;
     public Polygon boundingPolygon;
 
-    private ArrayList<? extends BaseActor> parentList;
+    protected ArrayList<? extends BaseActor> parentList;
 
     public BaseActor()
     {
